@@ -149,7 +149,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
-					<warName>restful-app</warName>
+					<warName>spring-restful-app-mvn-1.0.0-SNAPSHOT</warName>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -164,6 +164,14 @@
 						</goals>
 					</execution>
 				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>tomcat-maven-plugin</artifactId>
+				<version>1.0</version>
+				<configuration>
+					<server>myserver</server>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
